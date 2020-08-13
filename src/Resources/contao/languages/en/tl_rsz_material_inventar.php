@@ -15,10 +15,10 @@
 /**
  * Operations
  */
-$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['edit'] = ["Datensatz mit ID: %s bearbeiten", "Datensatz mit ID: %s bearbeiten"];
-$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['copy'] = ["Datensatz mit ID: %s kopieren", "Datensatz mit ID: %s kopieren"];
-$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['delete'] = ["Datensatz mit ID: %s löschen", "Datensatz mit ID: %s löschen"];
-$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['show'] = ["Datensatz mit ID: %s ansehen", "Datensatz mit ID: %s ansehen"];
+$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['edit'] = ["Datensatz mit ID %s bearbeiten", "Datensatz mit ID %s bearbeiten"];
+$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['copy'] = ["Datensatz mit ID %s kopieren", "Datensatz mit ID %s kopieren"];
+$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['delete'] = ["Datensatz mit ID %s löschen", "Datensatz mit ID %s löschen"];
+$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['show'] = ["Datensatz mit ID %s ansehen", "Datensatz mit ID %s ansehen"];
 
 /**
  * Fields
