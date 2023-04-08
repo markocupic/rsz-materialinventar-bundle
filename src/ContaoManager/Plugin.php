@@ -3,15 +3,24 @@
 /**
  * This file is part of a markocupic Contao Bundle.
  *
- * (c) Marko Cupic 2020 <m.cupic@gmx.ch>
- * @author     Marko Cupic
- * @package    RSZ Materialinventar
- * @license    MIT
- * @see        https://github.com/markocupic/rsz-materialinventar-bundle
+ * (c) Marko Cupic 2023 <m.cupic@gmx.ch>
  *
+ * @license    MIT
+ *
+ * @see        https://github.com/markocupic/rsz-materialinventar-bundle
  */
 
 declare(strict_types=1);
+
+/*
+ * This file is part of RSZ Benutzerverwaltung Bundle.
+ *
+ * (c) Marko Cupic 2023 <m.cupic@gmx.ch>
+ * @license MIT
+ * For the full copyright and license information,
+ * please view the LICENSE file that was distributed with this source code.
+ * @link https://github.com/markocupic/rsz-materialinventar-bundle
+ */
 
 namespace Markocupic\RszMaterialinventarBundle\ContaoManager;
 
@@ -19,25 +28,13 @@ use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 
-/**
- * Class Plugin
- *
- * @package Markocupic\RszMaterialinventarBundle\ContaoManager
- */
 class Plugin implements BundlePluginInterface
 {
-    /**
-     * @param ParserInterface $parser
-     * @return array
-     */
-    public function getBundles(ParserInterface $parser)
+    public function getBundles(ParserInterface $parser): array
     {
-
         return [
             BundleConfig::create('Markocupic\RszMaterialinventarBundle\MarkocupicRszMaterialinventarBundle')
                 ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle']),
         ];
     }
-
 }
-

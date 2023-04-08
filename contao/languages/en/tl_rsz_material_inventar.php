@@ -3,7 +3,7 @@
 /**
  * This file is part of a markocupic Contao Bundle.
  *
- * (c) Marko Cupic 2020 <m.cupic@gmx.ch>
+ * (c) Marko Cupic 2023 <m.cupic@gmx.ch>
  *
  * @author     Marko Cupic
  * @package    RSZ Materialinventar
@@ -28,6 +28,3 @@ $GLOBALS['TL_LANG']['tl_rsz_material_inventar']['article_description'] = ['Artik
 $GLOBALS['TL_LANG']['tl_rsz_material_inventar']['purchasing_date'] = ['Kaufjahr', ''];
 $GLOBALS['TL_LANG']['tl_rsz_material_inventar']['original_price'] = ['Neupreis (CHF)', ''];
 $GLOBALS['TL_LANG']['tl_rsz_material_inventar']['location'] = ['Lagerstandort', ''];
-
-
-

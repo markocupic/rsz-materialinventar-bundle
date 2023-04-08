@@ -3,7 +3,7 @@
 /**
  * This file is part of a markocupic Contao Bundle.
  *
- * (c) Marko Cupic 2020 <m.cupic@gmx.ch>
+ * (c) Marko Cupic 2023 <m.cupic@gmx.ch>
  * @author     Marko Cupic
  * @package    RSZ Materialinventar
  * @license    MIT
@@ -12,11 +12,8 @@
  */
 
 /**
- * Miscelaneous
+ * Backend modules
  */
-//$GLOBALS['TL_LANG']['MSC'][''] = '';
+$GLOBALS['TL_LANG']['MOD']['rsz_tools'] = 'RSZ Tools';
+$GLOBALS['TL_LANG']['MOD']['rsz_materialinventar'] = ['RSZ Materialinventar', 'Administrieren Sie die RSZ Materialliste'];
 
-/**
-* Errors
-*/
-//$GLOBALS['TL_LANG']['ERR'][''] = '';
