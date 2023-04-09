@@ -12,9 +12,12 @@
  *
  */
 
+use Contao\DataContainer;
+use Contao\DC_Table;
+
 $GLOBALS['TL_DCA']['tl_rsz_material_inventar'] = [
     'config'   => [
-        'dataContainer'    => 'Table',
+        'dataContainer'    => DC_Table::class,
         'enableVersioning' => true,
         'sql'              => [
             'keys' => [
@@ -24,9 +27,9 @@ $GLOBALS['TL_DCA']['tl_rsz_material_inventar'] = [
     ],
     'list'     => [
         'sorting'           => [
-            'mode'        => 1,
+            'mode'        => DataContainer::MODE_SORTED,
             'fields'      => ['article_name'],
-            'flag'        => 1,
+            'flag'        => DataContainer::SORT_INITIAL_LETTER_ASC,
             'panelLayout' => 'filter;sort,search,limit',
         ],
         'label'             => [
@@ -42,23 +45,19 @@ $GLOBALS['TL_DCA']['tl_rsz_material_inventar'] = [
         ],
         'operations'        => [
             'edit'   => [
-                'label' => &$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['edit'],
-                'href'  => 'act=edit',
-                'icon'  => 'edit.gif',
+                'href' => 'act=edit',
+                'icon' => 'edit.gif',
             ],
             'copy'   => [
-                'label' => &$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['copy'],
-                'href'  => 'act=copy',
-                'icon'  => 'copy.gif',
+                'href' => 'act=copy',
+                'icon' => 'copy.gif',
             ],
             'delete' => [
-                'label'      => &$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['delete'],
                 'href'       => 'act=delete',
                 'icon'       => 'delete.gif',
                 'attributes' => 'onclick="if(!confirm(\''.($GLOBALS['TL_LANG']['MSC']['deleteConfirm'] ?? null).'\'))return false;Backend.getScrollOffset()"',
             ],
             'show'   => [
-                'label'      => &$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['show'],
                 'href'       => 'act=show',
                 'icon'       => 'show.gif',
                 'attributes' => 'style="margin-right:3px"',
@@ -66,7 +65,7 @@ $GLOBALS['TL_DCA']['tl_rsz_material_inventar'] = [
         ],
     ],
     'palettes' => [
-        'default' => 'article_name,article_description,purchasing_date,original_price,location',
+        'default' => '{article_legend},article_name,article_description,purchasing_date,original_price,location',
     ],
     'fields'   => [
         'id'                  => [

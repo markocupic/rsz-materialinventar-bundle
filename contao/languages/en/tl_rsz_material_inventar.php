@@ -21,6 +21,11 @@ $GLOBALS['TL_LANG']['tl_rsz_material_inventar']['delete'] = ["Datensatz mit ID %
 $GLOBALS['TL_LANG']['tl_rsz_material_inventar']['show'] = ["Datensatz mit ID %s ansehen", "Datensatz mit ID %s ansehen"];
 
 /**
+ * Legends
+ */
+$GLOBALS['TL_LANG']['tl_rsz_material_inventar']['article_legend'] = "Artikel erfassen";
+
+/**
  * Fields
  */
 $GLOBALS['TL_LANG']['tl_rsz_material_inventar']['article_name'] = ['Artikelbezeichnung', ''];
